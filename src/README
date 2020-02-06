@@ -1,0 +1,22 @@
+To run the code :
+
+./run-simulation.sh
+
+
+
+The explanation of the steps in the bash script are in the design document.
+
+
+
+How To Run :
+
+- Start all the ten sites with : ./Start.sh (these will get created with ports 9090-9099)
+- Start the transaction manager (it will be created with port 7777) : 
+python2 TransactionManager.py
+- Run the simulator and provide the path to the input file :
+python2 Simulator.py ./Test1.txt
+- Stop all the sites and the transaction manager before starting a new test case : ./Stop.sh
+
+
+
+All these instructions are included in the run-simulation.sh file.
